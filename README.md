@@ -18,7 +18,6 @@ product C and so on... At least an other update for product A arrives. The syste
 first update is not really interesting anymore. The conflation is the mean to shrink the queue in order to
 anticipating the futur updates already in the queue and which could be merged to older updates or even replace them.
 
-
 So the goal is when producer sends for instance (in chronological order):
 
     A1, B1, C1, A2, A3, B2, C2
@@ -32,7 +31,6 @@ Of course, in according to the throughput of producers and consumers, the confla
 
     f(A1), f(B1,B2), f(C1,C2), f(A2,A3)
 
-
 A consequence of this process, is that the total number of messages, at an instant, should be minimized. Ideally, it
 should not be greater that the number of different products.
 
@@ -43,9 +41,6 @@ As the goal is to test several implementations, two interfaces are exposed:
 
 * Conflator: the engine allowing the conflation processing
 * Message: the schema of each messages
-
-See the javadocs of these classes for more details.
-
 
 BENCHMARK
 =========
