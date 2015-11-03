@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.org/dumbjedi/conflator.svg?branch=master)](https://travis-ci.org/dumbjedi/conflator)
+[![Build Status](https://travis-ci.org/tenthdoctor/conflator.svg?branch=master)](https://travis-ci.org/tenthdoctor/conflator)
 
-conflator
+CONFLATOR
 =========
 
 The main goal of this library is to test different implementations of conflation algorithm in java.
 
-conflation
+CONFLATION
 ==========
 
 Let's take an example for explaining what conflation is.
@@ -36,7 +36,7 @@ Of course, in according to the throughput of producers and consumers, the confla
 A consequence of this process, is that the total number of messages, at an instant, should be minimized. Ideally, it
 should not be greater that the number of different products.
 
-api
+API
 ===
 
 As the goal is to test several implementations, two interfaces are exposed:
@@ -47,7 +47,7 @@ As the goal is to test several implementations, two interfaces are exposed:
 See the javadocs of these classes for more details.
 
 
-benchmark
+BENCHMARK
 =========
 
 Of course the performance is one of the principal criteria for validating the implementations. Microbenchmarks are
